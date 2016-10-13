@@ -1,12 +1,13 @@
 .body{
     text-align: center;
     font-family: 'Russo One', sans-serif;
+    color: white;
 }
 
 .topbar {
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 .ulTopBar {
   list-style-type: none;
@@ -15,26 +16,59 @@
   overflow: hidden;
   background-color: #666;
 }
-.liTopBar {
-  float: left;
+.liTopBar a {
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 20px;
 }
-.liTopBarLeft{
-    float: right;
+.liTopBar a:hover{
+  background-color: #AAA;
+  text-decoration: none;
+  color: white;
 }
+
 
 .home {
-  background-color: #F4A261;
+  padding-bottom: 250px
+}
+.homeContent{
+  padding-top: 300px;
   position: relative;
-  padding-top: 70px;
+  z-index: 1;
+}
+.tint{
+  content: "";
+  position: absolute;
+  background-color: #F4A261;
+  opacity: .5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.picture{
+  position: absolute;
+  left:0;
+  width: auto;
+  opacity: .3;
+  z-index: -1;
+  box-shadow: 0 0 100px 100px #F4A261 inset;
 }
 
-.backgroundPicture2 {
+.aboutMe {
   background-color: #17BEBB;
+}
+
+.aboutMeContents {
   padding: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .backgroundPicture3 {
-  background-color: #FFFFF;
+  background-color: #FFF;
   padding: 40px;
 }
 
@@ -77,8 +111,6 @@
   text-align: center;
 }
 
-.liContactPageLink {}
-
 .liContactPageLink a {
   display: inline-block;
   color: white;
@@ -120,6 +152,13 @@
   color: white;
 }
 
+hr{
+  margin-left: 20%;
+  margin-right: 20%;
+  border: none;
+  height: 3px;
+}
+
 @media screen and (max-width:1034px) {
   #backgroundPicture3 {
     height: 1000px;
@@ -132,20 +171,9 @@
   }
 }
 
-
-a {
-    color: inherit;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    
+.floatRight{
+  float: right;
 }
-a:hover{
-    background-color: #AAA;
-    text-decoration: none;
-    color: white;
-}
-hr {
-    border-width: 3px;
-    border-color: #111;
+.floatLeft{
+  float: left;
 }
