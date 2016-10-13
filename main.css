@@ -50,11 +50,14 @@
 }
 .picture{
   position: absolute;
-  left:0;
-  width: auto;
-  opacity: .3;
-  z-index: -1;
-  box-shadow: 0 0 100px 100px #F4A261 inset;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+}
+.sideBlur{
+  box-shadow: 0 0 8px 8px white inset;
 }
 
 .aboutMe {
