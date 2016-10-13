@@ -30,10 +30,10 @@
 
 
 .home {
-  padding-bottom: 250px
+  padding-bottom: 10%;
 }
 .homeContent{
-  padding-top: 300px;
+  padding-top: 15%;
   position: relative;
   z-index: 1;
 }
@@ -54,10 +54,9 @@
   left: 0;
   right: 0;
   bottom: 0;
+  margin: auto;
+  max-width: 100%;
   z-index: -2;
-}
-.sideBlur{
-  box-shadow: 0 0 8px 8px white inset;
 }
 
 .aboutMe {
