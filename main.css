@@ -1,9 +1,4 @@
-.body{
-    text-align: center;
-    font-family: 'Russo One', sans-serif;
-    color: white;
-}
-
+/*TOP MENU BAR*/
 .topbar {
   position: fixed;
   width: 100%;
@@ -28,9 +23,9 @@
   color: white;
 }
 
-
+/*MAIN SECTION*/
 .home {
-  padding-bottom: 10%;
+  padding-bottom: 20%;
 }
 .homeContent{
   padding-top: 15%;
@@ -49,8 +44,7 @@
   z-index: -1;
 }
 .picture{
-  background: linear-gradient(to right, #F4A261 , transparent 10%, transparent 90%, #F4A261), url("IMG_4220.JPG") no-repeat center;
-  
+  background: linear-gradient(to right, #F4A261 , transparent 10%, transparent 90%, #F4A261), url("IMG_4220.JPG") no-repeat;
   position: absolute;
   background-size: cover;
   top: -150;
@@ -60,39 +54,16 @@
   margin: auto;
   z-index: -2;
 }
-
-
-.aboutMe {
-  background-color: #17BEBB;
-}
-
-.aboutMeContents {
-  padding: 40px;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-.backgroundPicture3 {
-  background-color: #FFF;
-  padding: 40px;
-}
-
-.backgroundPicture4 {
-  background-color: #F4A261;
-  height: 550px;
-}
-
+/*HOME PAGE LINKS*/
 .ulHomePageLinks {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-
 .liHomePageLink {
   display: inline;
 }
-
 .liHomePageLink a {
   display: inline-block;
   color: white;
@@ -102,79 +73,67 @@
   background-color: #666;
   margin: 20px;
 }
-
 .liHomePageLink a:hover {
   background-color: #AAA;
   text-decoration: none;
   color: white;
 }
 
-.ulContactPageLinks {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
 
-.liContactPageLink a {
-  display: inline-block;
-  color: white;
-  padding: 14px 16px;
-  border-color: #FFF;
-  border-radius: 5px;
-  background-color: #666;
-  margin: 20px;
-}
 
-.liContactPageLink a:hover {
-  background-color: #AAA;
-  text-decoration: none;
-  color: white;
-}
 
+
+
+/*ABOUT ME SECTION */
+.aboutMe {
+  position: relative;
+  background-color: #17BEBB;
+}
+.aboutMeContents {
+  padding: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+/*PROJECT SECTION */
+.projectLinks {
+  position: relative;
+  color: black;
+  background-color: #FFF;
+
+}
 .ulProjectLinks {
+  display: inline-block;
   list-style: none;
   text-align: center;
 }
-
 .liProject {
-  float: left;
-}
-
-.liProject a {
   display: inline-block;
+  padding: 70px 0;
+  margin: 20px;
+}
+.liProject a {
   color: white;
-  padding: 100px 100px;
+  padding: 70px 70px;
   border-color: #FFF;
   border-radius: 5px;
   background-color: #666;
-  margin: 20px;
 }
-
 .liProject a:hover {
   background-color: #AAA;
   text-decoration: none;
   color: white;
 }
 
+/*CONTACT SECTION*/
+.contact {
+  background-color: #F4A261;
+}
+
 hr{
   margin-left: 20%;
   margin-right: 20%;
-  border: none;
-  height: 3px;
 }
 
-@media screen and (max-width:1034px) {
-  #backgroundPicture3 {
-    height: 1000px;
-  }
-}
-
-@media screen and (max-width:734px) {
-  #backgroundPicture3 {
-    height: 1700px;
-  }
-}
 
 .floatRight{
   float: right;
@@ -182,5 +141,9 @@ hr{
 .floatLeft{
   float: left;
 }
-
+.body{
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    color: white;
+}
 
