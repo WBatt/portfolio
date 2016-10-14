@@ -49,15 +49,18 @@
   z-index: -1;
 }
 .picture{
+  background: linear-gradient(to right, #F4A261 , transparent 10%, transparent 90%, #F4A261), url("IMG_4220.JPG") no-repeat center;
+  
   position: absolute;
-  top: 0;
+  background-size: cover;
+  top: -150;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  max-width: 100%;
   z-index: -2;
 }
+
 
 .aboutMe {
   background-color: #17BEBB;
@@ -179,3 +182,5 @@ hr{
 .floatLeft{
   float: left;
 }
+
+
