@@ -141,6 +141,13 @@ hr{
 .floatLeft{
   float: left;
 }
+
+.marginLeft{
+  margin-left: 15%;
+}
+.marginRight{
+  margin-right: 15%;
+}
 .body{
     text-align: center;
     font-family: 'Russo One', sans-serif;
