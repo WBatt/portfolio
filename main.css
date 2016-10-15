@@ -127,14 +127,41 @@
 /*CONTACT SECTION*/
 .contact {
   background-color: #F4A261;
+  position: relative;
 }
+
+
+form{
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+input[type=text]{
+  color: black;
+  width: 500px;
+  height: 40px;
+  margin: 18px 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: left;
+  border-radius: 5px;
+}
+#message {
+  color: black;
+  width: 500px;
+  margin: 18px 0;
+  height: 100px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  resize: none;
+}
+
 
 hr{
   margin-left: 20%;
   margin-right: 20%;
 }
-
-
 .floatRight{
   float: right;
 }
