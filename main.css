@@ -157,7 +157,10 @@ input[type=text]{
 }
 
 
-
+.btnForm{
+  width: 500px;
+  margin: auto;
+}
 
 
 
