@@ -57,28 +57,14 @@
 /*HOME PAGE LINKS*/
 .ulHomePageLinks {
   list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
 }
 .liHomePageLink {
-  display: inline;
+  display: inline-block;
+  margin: 1em;
 }
 .liHomePageLink a {
   display: inline-block;
-  color: white;
-  padding: 14px 16px;
-  border-color: #FFF;
-  border-radius: 5px;
-  background-color: #666;
-  margin: 20px;
 }
-.liHomePageLink a:hover {
-  background-color: #AAA;
-  text-decoration: none;
-  color: white;
-}
-
 
 
 
@@ -128,9 +114,9 @@
 .contact {
   background-color: #F4A261;
   position: relative;
+  overflow: hidden;
+  padding-bottom: 1em;
 }
-
-
 form{
   width: 50%;
   margin: auto;
@@ -146,7 +132,7 @@ input[type=text]{
   text-align: left;
   border-radius: 5px;
 }
-#message {
+.message {
   color: black;
   width: 500px;
   margin: 18px 0;
@@ -156,8 +142,29 @@ input[type=text]{
   border-radius: 5px;
   resize: none;
 }
+.btn-submit{
+  position: relative;
+  background-color: #666;
+  border-radius: 5px;
+  float: left;
+  padding: 1em;
+}
 
 
+/*FOOTER*/
+.footer{
+  background-color: #666;
+}
+
+
+
+
+
+
+.faceboo{
+  background-image: url(FB-f-Logo__blue_29.png);
+  background-repeat: no-repeat;
+}
 hr{
   margin-left: 20%;
   margin-right: 20%;
