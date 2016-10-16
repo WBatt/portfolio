@@ -1,21 +1,22 @@
 /*TOP MENU BAR*/
 .topbar {
+  background-color: #666;
   position: fixed;
   width: 100%;
   z-index: 2;
+  height: 7em;
 }
 .ulTopBar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #666;
 }
 .liTopBar a {
   color: white;
   display: block;
   text-align: center;
-  padding: 20px;
+
 }
 .liTopBar a:hover{
   background-color: #AAA;
@@ -25,10 +26,10 @@
 
 /*MAIN SECTION*/
 .home {
-  padding-bottom: 20%;
+  padding-bottom: 25em;
 }
 .homeContent{
-  padding-top: 15%;
+  padding-top: 20em;
   position: relative;
   z-index: 1;
 }
@@ -164,10 +165,8 @@ input[type=text]{
 
 
 
-.faceboo{
-  background-image: url(FB-f-Logo__blue_29.png);
-  background-repeat: no-repeat;
-}
+
+
 hr{
   margin-left: 20%;
   margin-right: 20%;
@@ -175,8 +174,19 @@ hr{
 .floatRight{
   float: right;
 }
+.floatRight a{
+  padding-top: 2.8em;
+  padding-bottom: 2.8em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
 .floatLeft{
   float: left;
+  font-size: 2.5em;
+}
+.floatLeft a{
+  padding-top: .8em;
+  padding-bottom: .6em;
 }
 
 .marginLeft{
@@ -191,3 +201,67 @@ hr{
     color: white;
 }
 
+.headerHeight{
+    height: 3em;
+}
+.headerFont{
+  font-size: 2em;
+}
+
+
+
+.menu-button{
+    float: right;
+    margin-right: 2em;
+    margin-top: 1.9em;
+    height: 2em;
+}
+.menu-button:before {
+    content: "";
+    float: right;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 3em;
+    height: .5em;
+    background: white;
+    box-shadow: 
+      0 .75em 0 0 white,
+      0 1.5em 0 0 white,
+      0 2.25em 0 0 white;
+}
+
+.menu-button-content{
+  display: none;
+    background-color: #7a7a7a;
+    min-width: auto;
+    box-shadow: 0.25em 0.25em 0.5em .1em black;
+    border-radius: 5px;
+    padding-left: .25em;
+    padding-right: .25em;
+    z-index: 1;
+}
+.menu-button:hover .menu-button-content {
+    display: block;
+}
+
+.drop-down-list{
+  
+}
+
+@media screen and (max-width:768px){
+  #about{
+    display: none;
+  }
+  #contact{
+    display: none;
+  }
+  #portfolio{
+    display: none;
+  }
+}
+
+@media screen and (min-width:769px){
+  .menu-button{
+    display: none;
+  }
+}

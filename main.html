@@ -3,6 +3,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 	<link rel="stylesheet" href="main.css" type="text/css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="main.js"></script>
 </head>
 
 <div class="body">
@@ -10,9 +14,24 @@
 <div class="topbar">
   <ul class="ulTopBar">
     <li class="liTopBar floatLeft marginLeft"><a href="#Home">WiLLBaTT</a></li>
-    <li class="liTopBar floatRight marginRight"><a href="#About">About</a></li>
-    <li class="liTopBar floatRight"><a href="#Portfolio">Portfolio</a></li>
-    <li class="liTopBar floatRight"><a href="#Contact">Contact</a></li>
+    <li class="liTopBar floatRight marginRight" id="contact"><a href="#Contact">Contact</a></li>
+    <li class="liTopBar floatRight" id="portfolio"><a href="#Portfolio">Portfolio</a></li>
+    <li class="liTopBar floatRight" id="about"><a href="#About">About</a></li>
+    
+    
+    
+    <div class = "menu-button">
+				<div class = "menu-button-content">
+					<ul class = "dropdown-list">
+            <li id="mContact"><a href="#Contact">Contact</a></li>
+            <li id="mPortfolio"><a href="#Portfolio">Portfolio</a></li>
+            <li id="mAbout"><a href="#About">About</a></li>
+					</ul>
+				</div>
+		</div>
+    
+    
+    
   </ul>
 </div>
 
@@ -24,13 +43,13 @@
   
   <div class="picture"></div>
     <div class="homeContent">
-      <p style="font-size:90px">WiLL BaTT</p>
+      <p style="font-size:7em">WiLL BaTT</p>
       <hr></hr>
       <ul class="ulHomePageLinks">
         <li class="liHomePageLink"><a href="https://www.facebook.com/WillBatt87"><img src="FB-f-Logo__blue_29.png"></a></li>
         <li class="liHomePageLink"><a href="https://www.linkedin.com/in/will-batt-508889ba"><img src="Logo-2C-14px.png"></a></li>
         <li class="liHomePageLink"><a href="https://github.com/WBatt"><img src="GitHub-Mark-32px.png"></a></li>
-       </u>
+       </ul>
     </div>
   
 </div>
@@ -42,7 +61,11 @@
 <div class="aboutMe">
   <div class="aboutMeContents">
     <h1 style="font-size:50px">About Me</h1>
-    <p style="font-size:18px">Lorem ipsum dolor sit amet, nec harum timeam aperiri et, vim et nostrum definiebas, at mea latine maluisset. Sea cu tacimates consetetur, vim possit everti epicurei id, ex pro nihil diceret dolores. Ea mel ludus delectus, facilis rationibus contentiones ut eum. Est ne quas ponderum efficiantur. Alia audiam equidem eam id, an quaeque ceteros sapientem est. Id legere commodo inimicus eum, eos postulant vituperatoribus ad, quis vide docendi has id. Mutat omnium saperet quo id, te est novum noster ocurreret.</p>
+    <p style="font-size:18px">Lorem ipsum dolor sit amet, nec harum timeam aperiri et, vim et nostrum definiebas, at mea latine maluisset. 
+                              Sea cu tacimates consetetur, vim possit everti epicurei id, ex pro nihil diceret dolores. Ea mel ludus delectus, 
+                              facilis rationibus contentiones ut eum. Est ne quas ponderum efficiantur. Alia audiam equidem eam id, an quaeque 
+                              ceteros sapientem est. Id legere commodo inimicus eum, eos postulant vituperatoribus ad, quis vide docendi has id. 
+                              Mutat omnium saperet quo id, te est novum noster ocurreret.</p>
   </div>
 </div>
 
@@ -65,11 +88,11 @@
 <div class="contact">
   <h1>Contact me:</h1>
   <form name="contact_form" method="post" action="contact-form-handler.php">
-    <input type="text" name="name"placeholder=" Name"/>
+    <input type="text" name="name" placeholder=" Name"/>
     <input type="text" name="email" placeholder=" Email"/>
     <textarea wrap="soft" name="message" class="message" placeholder=" Message..."></textarea>
     <div class="btnForm">
-    <input type="submit" value="Submit" class="btn-submit"/>
+      <input type="submit" value="Submit" class="btn-submit"/>
     </div>
   </form>
 </div>
@@ -78,9 +101,11 @@
 
   <div class="footer">
     <ul class="ulHomePageLinks">
-      <li class="liHomePageLink"><a href="https://www.facebook.com/WillBatt87"><img src="FB-f-Logo__blue_29.png"></a></li>
-      <li class="liHomePageLink"><a href="https://www.linkedin.com/in/will-batt-508889ba"><img src="Logo-2C-14px.png"></a></li>
       <li class="liHomePageLink"><a href="https://github.com/WBatt"><img src="GitHub-Mark-32px.png"></a></li>
+      <li class="liHomePageLink"><a href="https://www.linkedin.com/in/will-batt-508889ba"><img src="Logo-2C-14px.png"></a></li>
+      <li class="liHomePageLink"><a href="https://www.facebook.com/WillBatt87"><img src="FB-f-Logo__blue_29.png"></a></li>
+      
+      
      </u>
     
   </div>
